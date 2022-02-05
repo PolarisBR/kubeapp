@@ -2,3 +2,4 @@ _build
 deps
 Dockerfile
 shell.nix
+ci_service_account.json
