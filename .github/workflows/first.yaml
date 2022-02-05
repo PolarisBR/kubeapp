@@ -30,4 +30,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - docker build -t kubeapp:ci -f Dockerfile
+      - name: Docker build
+        run: docker build -t kubeapp:ci -f Dockerfile
