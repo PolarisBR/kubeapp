@@ -50,3 +50,4 @@ jobs:
           registry: gcr.io
           project_id: $PROJECT_ID
           image_name: kubeapp_pr_$GITHUB_REF_NAME:$GITHUB_SHA
+          push_only: true
