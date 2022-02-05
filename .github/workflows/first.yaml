@@ -26,3 +26,8 @@ jobs:
       run: mix deps.get
     - name: Run tests
       run: mix test
+    name: Create artifact
+    runs-on: ubuntu-latest
+
+    steps:
+      - docker build -t kubeapp:ci -f Dockerfile
