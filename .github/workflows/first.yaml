@@ -35,4 +35,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Docker build
-        run: docker build -t kubeapp:ci -f Dockerfile .
+        run: docker build -t kubeapp:pr-{{ env.GITHUB_REF_NAME}}:{{ env.GITHUB_SHA }} -f Dockerfile .
