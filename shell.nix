@@ -15,6 +15,7 @@ pkgs.mkShell {
     elixir
     pkgs.yarn
     pkgs.jq
+    kubernetes-helm
   ];
   shellHook = ''
     pre-commit install
