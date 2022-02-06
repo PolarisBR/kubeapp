@@ -52,6 +52,6 @@ jobs:
           gcloud_service_key: ${{ secrets.CI_SERVICE_KEY }}
           registry: eu.gcr.io
           project_id: ${{ secrets.PROJECT_ID }}
-          image_name: 'kubeapp_pr_$GITHUB_REF_NAME'
-          image_tag: '$GITHUB_SHA'
+          image_name: kubeapp_pr_${{GITHUB_REF_NAME}}
+          image_tag: $GITHUB_SHA
           push_only: true
