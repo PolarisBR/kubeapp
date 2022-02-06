@@ -44,7 +44,7 @@ jobs:
     environment: CI
     steps:
       - name: Debug print
-        run: echo $TEST_VALUE
+        run: echo ${{ ci.TEST_VALUE }}
       - name: Push to GCR
         uses: RafikFarhad/push-to-gcr-github-action@v4.0.0
         with:
