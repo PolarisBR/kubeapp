@@ -50,7 +50,7 @@ jobs:
         uses: RafikFarhad/push-to-gcr-github-action@v4.0.0
         with:
           gcloud_service_key: ${{ secrets.CI_SERVICE_KEY }}
-          registry: gcr.io
+          registry: eu.gcr.io
           project_id: ${{ secrets.PROJECT_ID }}
-          image_name: kubeapp_pr_$GITHUB_REF_NAME:$GITHUB_SHA
+          image_name: 'kubeapp_pr_$GITHUB_REF_NAME:$GITHUB_SHA'
           push_only: true
